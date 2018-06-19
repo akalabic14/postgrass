@@ -1,0 +1,35 @@
+{
+  "name": "postgrass",
+  "version": "0.0.1",
+  "description": "ORM for PostgreSQL DB",
+  "main": "lib/index",
+  "types": "lib/index",
+  "scripts": {
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./index.ts",
+    "test": "mocha -r ts-node/register src/test/test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akalabic14/postgrass.git"
+  },
+  "keywords": [
+    "postgresql",
+    "postgrass"
+  ],
+  "author": "Aleksandar Kalabic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akalabic14/postgrass/issues"
+  },
+  "homepage": "https://github.com/akalabic14/postgrass#readme",
+  "devDependencies": {
+    "@types/node": "^10.3.4",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.5",
+    "ts-node": "^6.1.1",
+    "typescript": "^2.9.2",
+    "typings": "^2.1.1"
+  }
+}
